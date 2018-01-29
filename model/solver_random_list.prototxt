@@ -1,0 +1,22 @@
+train_net: "/opt/intern/users/yuewang/ScanNet-FCN/model/train_random_list.prototxt"
+#test_net: "/opt/intern/users/yuewang/ScanNet-FCN/model/test.prototxt"
+
+#iter_size: 20
+lr_policy: "poly"
+power: 0.9
+base_lr: 2.5e-4
+#base_lr: 0.002
+average_loss: 10
+display: 20
+max_iter: 400000
+momentum: 0.9
+weight_decay: 0.0005
+
+#test_iter:500
+#test_interval: 500
+#test_initialization: true
+
+snapshot: 2000
+snapshot_prefix: "output/model/ScanNet_random_list"
+solver_mode: GPU
+#debug_info: true
